@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Live Stats</title>
+</head>
+<body>
+    <header>
+        <h1>🏀 Live Stats</h1>
+    </header>
+    <div id =navbar>
+        <div id="logo">
+        🏀
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#team-score">Team Result</a></li>
+            <li><a href="#add-players">Add players</a></li>
+            <li><a href="#player-stats">Player Stats</a></li>
+            <li><a href="#post-game">Post Game</a></li>
+            <li><a href="#game-history">Game History</a></li>
+        </ul>
+    </nav>
+    </div>
+
+
+<section id="team-score">
+    <h2>Score</h2>
+    <div id="scoreboard">
+    <div id="team-a-score">
+        <span id="score-a">Team A: 0</span>
+        <input id="team-a-name" placeholder="Team A Name">
+        <div class="score-button">
+        <button id="team-a-1">Team A +1</button>
+        <button id="team-a-2">Team A +2</button>
+        <button id="team-a-3">Team A +3</button>
+        </div>
+    </div>
+    <div id="team-b-score">
+        <span id="score-b">Team B: 0</span> 
+        <input id="team-b-name" placeholder="Team B Name">
+        <div class="score-button">
+        <button id="team-b-1">Team B +1</button>    
+        <button id="team-b-2">Team B +2</button>
+        <button id="team-b-3">Team B +3</button>
+        </div>
+    </div>
+    </div>
+    <button id="set-team-names">Set Teams</button>  
+    
+    <br><br>
+    <button id="start-btn">Start</button>
+    <button id="pause-btn">Pause</button>
+    <button id="end-btn">End</button>
+</section>
+
+<section id="add-players">
+    <h2>Add Player</h2>
+    <input id="playerName" placeholder="Name">
+    <input id="playerNumber" type="number" placeholder="Number">
+    <select id="playerTeam">
+        <option value="teamA">Team A</option>
+        <option value="te             amB">Team B</option>
+    </select>
+    <button id="add-player-btn">Add Player</button>
+</section>
+
+<section id="player-stats">
+    <h2>Players</h2>
+    <div id="teams-container">
+        <div id="team-a-container">
+            <h3>Team A</h3>
+        </div>
+        <div id="team-b-container">
+            <h3>Team B</h3>
+        </div>
+    </div>
+</section>  
+
+<section id="post-game" style="display:none;">
+    <h2>Post Game</h2>
+    <div id="post-game-stats"></div>
+    <button id="reset-btn" style="display:none;">Reset</button>
+</section>
+
+<section id="game-history">
+    <h2>Game History</h2>
+    <div id="history-container"></div>
+    <button id="clear-history-btn">Clear History</button>
+</section>
+
+</body>
+</html>
